@@ -31,6 +31,10 @@ public class ReproductorAudioMIDI {
     private static final int DURACION_BLANCA = 800; // 0.8 seg
     private static final int DURACION_NEGRA = 400; // 0.4 seg
     private static final int DURACION_CORCHEA = 200; // 0.2 seg
+    private static final int DURACION_SEMICORCHEA = 100; // 0.1 seg
+    private static final int DURACION_FUSA = 50; // 0.05 seg
+    private static final int DURACION_SEMIFUSA = 25; // 0.025 seg
+
 
     // Reproduce una única nota
     public static void reproducirNota(NotaMusical notaMusical) {
@@ -62,6 +66,12 @@ public class ReproductorAudioMIDI {
                 return DURACION_NEGRA;
             case CORCHEA:
                 return DURACION_CORCHEA;
+            case SEMICORCHEA:
+                return DURACION_SEMICORCHEA;
+            case FUSA:
+                return DURACION_FUSA;
+            case SEMIFUSA:
+                return DURACION_SEMIFUSA;
             default:
                 return 400;
         }
